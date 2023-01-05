@@ -1,0 +1,28 @@
+
+
+{% block content %}
+
+<div>
+    <h3>
+        List of activities:
+    </h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for date, name in zip_list %}
+                <tr>
+                    <td>{{date}}</td>
+                    <td>{{name}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>    
+
+
+{% endblock %}

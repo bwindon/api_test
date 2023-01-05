@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<p><a href="/strava/activity-table/">Activity table</a></p>
+<p><a href="/strava/activity-single-table/">Activity table - single table</a></p>
+<p><a href="/strava/activity-filter-table/">Activity table - filter table</a></p>
+<p><a href="/strava/json-view">JSON view</a></p>
+<p><a href="/strava/test-chart">Raw chart</a></p>
+<p>
+----
+
+</p>
+
+    <form action="/strava/update-activity-database/" method="GET">
+    <input type="submit" value="Update database">
+    </form>
+
+    <form action="/strava/update-activity-json" method="GET">
+    <input type="submit" value="Update json complete activity list">
+    </form>
+    {{output}}
+
+</body>
+</html>

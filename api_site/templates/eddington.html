@@ -1,0 +1,37 @@
+<html lang="en">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<meta http-equiv='cache-control' content='no-cache'>
+<head>
+    Eddington chart
+</head>
+
+  <body>
+    <p><h4><a href="/strava/home">Back to main page</a></h4>
+
+        <div>
+        <canvas id="myChart" width="400" height="180"></canvas>
+        <button onclick = "eddington()">Eddington</button>
+
+
+    <div class="container">
+      <h1>
+
+      </h1>
+      <span id="value">--</span>
+      <div class="button-container">
+        <button class="btn decrease">-</button>
+        <button class="btn reset">Reset</button>
+        <button class="btn increase">+</button>
+
+      </div>
+    </div>
+    <p></p>
+    <p id="longest_run">longest run = </p>
+    <p id="eddington_number">Eddington number = </p>
+
+
+    <p></p>
+    <script type="text/javascript" src="/static/eddington.js"></script>
+  </body>
+
+</html>

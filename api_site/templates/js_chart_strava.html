@@ -8,12 +8,13 @@
   <body>
     <p><h4><a href="/strava/home">Back to main page</a></h4>
 
+
         <div>
         <canvas id="myChart" width="400" height="180"></canvas>
-        <button onclick = "updateChart()">Fetch</button>
+        <body onload="updateChart()">
         <button onclick = "eddington()">Eddington</button>
-
         </div>
+
     <p>Before chart instantiation</p>
     <p id="demo"></p>
     <p id="demo2"></p>
@@ -40,7 +41,7 @@
     <p></p>
 
     <p></p>
-    <script type="text/javascript" src="/static/fetch.js"></script>
+  <script type="text/javascript" src="/static/fetch.js"></script>
   </body>
 
 </html>
